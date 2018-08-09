@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -26,10 +25,10 @@ public class StoryActivity extends AppCompatActivity {
     private Story story;
     private ImageView storyImageView;
     private TextView storyTextView;
-    private Button choice1Button;dfdfv
+    private Button choice1Button;
     private Button choice2Button;
     private String name;
-    Stack<Integer> pageStack = new Stack<Integer>();
+    Stack<Integer> pageStack = new Stack<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
