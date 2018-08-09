@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
 import com.example.paritosh.interactivestory.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,10 +27,8 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 String name = nameField.getText().toString();
                 toStartActivity(name);
-
             }
         });
     }
@@ -48,7 +45,5 @@ public class MainActivity extends AppCompatActivity {
         String key = resources.getString(R.string.key_name);
         intent.putExtra(key, name);
         startActivity(intent);
-
-
     }
 }
